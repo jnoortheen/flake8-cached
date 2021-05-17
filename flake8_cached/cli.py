@@ -13,7 +13,6 @@ class FileCheckerCached(f8checker.FileChecker):
     def run_checks(self):
         """Cache wrapper of super.run_checks."""
         # handle both cases where cache is enabled/disabled or invalid
-        print(self.filename)
         saved = self.cacher.get()
         if saved is not None:
             self.filename, self.results, self.statistics = saved
