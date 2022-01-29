@@ -1,6 +1,6 @@
 # Overview
 
-A wrapper around flake8's cli that uses cache at file level
+A wrapper around flake8's cli that caches results between runs at file level.
 
 This project was generated with [cookiecutter](https://github.com/audreyr/cookiecutter) using [jacebrowning/template-python](https://github.com/jacebrowning/template-python).
 
