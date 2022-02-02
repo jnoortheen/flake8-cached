@@ -1,6 +1,9 @@
-import flake8.checker as f8checker
-from flake8_cached.cacher import Cacher
 import os
+
+import flake8.checker as f8checker
+
+from flake8_cached.cacher import Cacher
+
 
 CACHE_PATH = ".cache/flake8"
 
@@ -26,6 +29,7 @@ if not os.path.exists(CACHE_PATH):
     os.makedirs(CACHE_PATH)
 
 from flake8 import checker
+
 
 # patch the class
 checker.FileChecker = FileCheckerCached

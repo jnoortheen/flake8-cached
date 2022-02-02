@@ -45,10 +45,6 @@ pylint = "*"
 # Testing
 pytest = "*"
 pytest-cov = "*"
-pytest-describe = "*"
-pytest-expecter = "*"
-pytest-random = "*"
-freezegun = "*"
 
 # Documentation
 mkdocs = "*"

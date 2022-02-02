@@ -1,4 +1,4 @@
-PACKAGE := flake8-cached
+PACKAGE := flake8_cached
 MODULES := $(wildcard $(PACKAGE)/*.py)
 
 # MAIN TASKS ##################################################################
@@ -63,9 +63,9 @@ check: install format  ## Run formaters, linters, and static analysis
 ifdef CI
 	git diff --exit-code
 endif
-	poetry run mypy $(PACKAGE) tests --config-file=.mypy.ini
-	poetry run pylint $(PACKAGE) tests --rcfile=.pylint.ini
-	poetry run pydocstyle $(PACKAGE) tests
+	poetry run mypy $(PACKAGE) --config-file=.mypy.ini
+	poetry run pylint $(PACKAGE) --rcfile=.pylint.ini
+	poetry run pydocstyle $(PACKAGE)
 
 # TESTS #######################################################################
 

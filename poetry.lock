@@ -148,17 +148,6 @@ pycodestyle = ">=2.8.0,<2.9.0"
 pyflakes = ">=2.4.0,<2.5.0"
 
 [[package]]
-name = "freezegun"
-version = "1.1.0"
-description = "Let your Python tests travel through time"
-category = "dev"
-optional = false
-python-versions = ">=3.5"
-
-[package.dependencies]
-python-dateutil = ">=2.7"
-
-[[package]]
 name = "ghp-import"
 version = "2.0.2"
 description = "Copy your docs directly to the gh-pages branch."
@@ -594,36 +583,6 @@ pytest = ">=4.6"
 testing = ["fields", "hunter", "process-tests", "six", "pytest-xdist", "virtualenv"]
 
 [[package]]
-name = "pytest-describe"
-version = "2.0.1"
-description = "Describe-style plugin for pytest"
-category = "dev"
-optional = false
-python-versions = "*"
-
-[package.dependencies]
-pytest = ">=4.0.0"
-
-[[package]]
-name = "pytest-expecter"
-version = "2.3"
-description = "Better testing with expecter and pytest."
-category = "dev"
-optional = false
-python-versions = ">=3.6,<4.0"
-
-[[package]]
-name = "pytest-random"
-version = "0.02"
-description = "py.test plugin to randomize tests"
-category = "dev"
-optional = false
-python-versions = "*"
-
-[package.dependencies]
-pytest = ">=2.2.3"
-
-[[package]]
 name = "python-dateutil"
 version = "2.8.2"
 description = "Extensions to the standard Python datetime module"
@@ -762,7 +721,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "df774eb819d0d852a412efe5e90c76fb43436fab7dcdf21aa5dc9b365f519174"
+content-hash = "aff5f62d37523cc36790dc4b17dcbeb1439c8d4b3c78abc3f6cbaa38110a9d4f"
 
 [metadata.files]
 appnope = [
@@ -876,10 +835,6 @@ executing = [
 flake8 = [
     {file = "flake8-4.0.1-py2.py3-none-any.whl", hash = "sha256:479b1304f72536a55948cb40a32dce8bb0ffe3501e26eaf292c7e60eb5e0428d"},
     {file = "flake8-4.0.1.tar.gz", hash = "sha256:806e034dda44114815e23c16ef92f95c91e4c71100ff52813adf7132a6ad870d"},
-]
-freezegun = [
-    {file = "freezegun-1.1.0-py2.py3-none-any.whl", hash = "sha256:2ae695f7eb96c62529f03a038461afe3c692db3465e215355e1bb4b0ab408712"},
-    {file = "freezegun-1.1.0.tar.gz", hash = "sha256:177f9dd59861d871e27a484c3332f35a6e3f5d14626f2bf91be37891f18927f3"},
 ]
 ghp-import = [
     {file = "ghp-import-2.0.2.tar.gz", hash = "sha256:947b3771f11be850c852c64b561c600fdddf794bab363060854c1ee7ad05e071"},
@@ -1140,17 +1095,6 @@ pytest = [
 pytest-cov = [
     {file = "pytest-cov-3.0.0.tar.gz", hash = "sha256:e7f0f5b1617d2210a2cabc266dfe2f4c75a8d32fb89eafb7ad9d06f6d076d470"},
     {file = "pytest_cov-3.0.0-py3-none-any.whl", hash = "sha256:578d5d15ac4a25e5f961c938b85a05b09fdaae9deef3bb6de9a6e766622ca7a6"},
-]
-pytest-describe = [
-    {file = "pytest-describe-2.0.1.tar.gz", hash = "sha256:e5cbaa31169f0060348ad5ca0191027e5f1f41f3f27fdeef208365e09c55eb9a"},
-    {file = "pytest_describe-2.0.1-py3-none-any.whl", hash = "sha256:ea347838bdf774b498ee7cb4a0b802a40be89e667a399fb63d860e3223bf4183"},
-]
-pytest-expecter = [
-    {file = "pytest-expecter-2.3.tar.gz", hash = "sha256:8e6a3e565fbc524e5a4988b664d1b748e0a810b33233880aa5d3d78970351e06"},
-    {file = "pytest_expecter-2.3-py3-none-any.whl", hash = "sha256:6336d7f43221500e392014a949fd77ee2c2a84bcae2be7669acdd0d7c89b89e9"},
-]
-pytest-random = [
-    {file = "pytest-random-0.02.tar.gz", hash = "sha256:92f25db8c5d9ffc20d90b51997b914372d6955cb9cf1f6ead45b90514fc0eddd"},
 ]
 python-dateutil = [
     {file = "python-dateutil-2.8.2.tar.gz", hash = "sha256:0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86"},
