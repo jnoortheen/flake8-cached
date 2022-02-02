@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: setup
+        id: setup
+        uses: ./.github/actions/setup
+
+      - name: CI
+        run: |
+          make ci
