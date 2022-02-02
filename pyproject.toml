@@ -14,9 +14,7 @@ homepage = "https://pypi.org/project/flake8-cached"
 #documentation = "https://flake8-cached.readthedocs.io"
 repository = "https://github.com/jnoortheen/flake8-cached"
 
-keywords = [
-    "flake8"
-]
+keywords = ["flake8"]
 classifiers = [
     # TODO: update this list to match your application: https://pypi.org/pypi?%3Aaction=list_classifiers
     "Development Status :: 1 - Planning",
@@ -29,42 +27,38 @@ classifiers = [
 
 [tool.poetry.dependencies]
 
-python = "^3.6"
+python = ">=3.6.2"
 flake8 = ">=3.9.0"
 
 
 [tool.poetry.dev-dependencies]
 
 # Formatters
-black = "=20.8b1"
-isort = "=5.5.1"
+black = "*"
+isort = "*"
 
 # Linters
 mypy = "*"
 pydocstyle = "*"
-pylint = "~2.6.0"
+pylint = "*"
 
 # Testing
-pytest = "^5.3.2"
+pytest = "*"
 pytest-cov = "*"
-pytest-describe = { git = "https://github.com/pytest-dev/pytest-describe", rev = "453aa9045b265e313f356f1492d8991c02a6aea6" } # use 2.0 when released
-pytest-expecter = "^2.1"
+pytest-describe = "*"
+pytest-expecter = "*"
 pytest-random = "*"
 freezegun = "*"
 
 # Reports
-coveragespace = "^4.0"
+coveragespace = "*"
 
 # Documentation
-mkdocs = "~1.0"
-pygments = "^2.5.2"
+mkdocs = "*"
+pygments = "*"
 
 # Tooling
-pyinstaller = "*"
-sniffer = "*"
-MacFSEvents = { version = "*", platform = "darwin" }
-pync = { version = "*", platform = "darwin" }
-ipython = "^7.16.3"
+ipython = "*"
 
 [tool.poetry.scripts]
 
@@ -73,7 +67,7 @@ flake8-cached = "flake8_cached.cli:main"
 [tool.black]
 
 target-version = ["py36", "py37", "py38"]
-skip-string-normalization = true
+
 
 [build-system]
 
