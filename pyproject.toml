@@ -1,81 +1,41 @@
 [tool.poetry]
-
-name = "flake8-cached"
-version = "0.0.2"
+name = "forked-flake8-cached"
+version = "0.0.3"
 description = "A wrapper around flake8's cli that uses cache at file level"
+authors = ["Noortheen Raja  <jnoortheen@gmail.com>", "yasu_umi <yasu.umi.19910101@gmail.com>"]
 
 license = "MIT"
 
-authors = ["Noortheen Raja  <jnoortheen@gmail.com>"]
-
 readme = "README.md"
 
-homepage = "https://pypi.org/project/flake8-cached"
-#documentation = "https://flake8-cached.readthedocs.io"
-repository = "https://github.com/jnoortheen/flake8-cached"
+homepage = "https://pypi.org/project/forked-flake8-cached"
+repository = "https://github.com/Yasu-umi/forked-flake8-cached"
 
 keywords = [
     "flake8"
 ]
-classifiers = [
-    # TODO: update this list to match your application: https://pypi.org/pypi?%3Aaction=list_classifiers
-    "Development Status :: 1 - Planning",
-    "Natural Language :: English",
-    "Operating System :: OS Independent",
-    "Programming Language :: Python",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.6",
-]
+classifiers = []
 
 [tool.poetry.dependencies]
-
-python = "^3.6"
-flake8 = "^3.9.0"
-
+python = "^3.10"
+flake8 = "^4.0.1"
 
 [tool.poetry.dev-dependencies]
-
-# Formatters
-black = "=20.8b1"
-isort = "=5.5.1"
-
-# Linters
-mypy = "*"
-pydocstyle = "*"
-pylint = "~2.6.0"
-
-# Testing
-pytest = "^5.3.2"
-pytest-cov = "*"
-pytest-describe = { git = "https://github.com/pytest-dev/pytest-describe", rev = "453aa9045b265e313f356f1492d8991c02a6aea6" } # use 2.0 when released
-pytest-expecter = "^2.1"
-pytest-random = "*"
-freezegun = "*"
-
-# Reports
-coveragespace = "^4.0"
-
-# Documentation
-mkdocs = "~1.0"
-pygments = "^2.5.2"
-
-# Tooling
-pyinstaller = "*"
-sniffer = "*"
-MacFSEvents = { version = "*", platform = "darwin" }
-pync = { version = "*", platform = "darwin" }
-ipython = "^7.12.0"
+black = "^22.1.0"
+isort = "^5.10.1"
+mypy = "^0.931"
+types-setuptools = "^57.4.8"
 
 [tool.poetry.scripts]
+flake8-cached = "forked_flake8_cached.cli:main"
 
-flake8-cached = "flake8_cached.cli:main"
-
-[tool.black]
-
-target-version = ["py36", "py37", "py38"]
-skip-string-normalization = true
+[tool.isort]
+line_length = 120
+multi_line_output = 3
+lines_after_imports = 2
+include_trailing_comma = true
+overwrite_in_place = true
 
 [build-system]
-
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"

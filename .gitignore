@@ -6,29 +6,9 @@ __pycache__
 setup.py
 pip-wheel-metadata/
 
-# Temporary OS files
-Icon*
-
 # Temporary virtual environment files
 /.cache/
 /.venv/
-
-# Temporary server files
-.env
-*.pid
-
-# Generated documentation
-/docs/gen/
-/docs/apidocs/
-/site/
-/*.html
-/docs/*.png
-
-# Google Drive
-*.gdoc
-*.gsheet
-*.gslides
-*.gdraw
 
 # Testing and coverage results
 /.coverage
@@ -39,9 +19,3 @@ Icon*
 /build/
 /dist/
 *.spec
-
-# Sublime Text
-*.sublime-workspace
-
-# Eclipse
-.settings
