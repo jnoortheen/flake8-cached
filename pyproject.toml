@@ -28,7 +28,7 @@ classifiers = [
 [tool.poetry.dependencies]
 
 python = "^3.8"
-flake8 = ">=3.9.0"
+flake8 = ">=5.0.0"
 
 
 [tool.poetry.dev-dependencies]
