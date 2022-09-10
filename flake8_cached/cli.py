@@ -9,8 +9,8 @@ CACHE_PATH = ".cache/flake8"
 
 
 class FileCheckerCached(f8checker.FileChecker):
-    def __init__(self, filename, checks, options):
-        super().__init__(filename, checks, options)
+    def __init__(self, *, filename, plugins, options):
+        super().__init__(filename=filename, plugins=plugins, options=options)
         self.cacher = Cacher(filename, CACHE_PATH)
 
     def run_checks(self):
