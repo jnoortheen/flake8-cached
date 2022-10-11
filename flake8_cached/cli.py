@@ -1,4 +1,5 @@
 import os
+import sys
 
 import flake8.checker as f8checker
 
@@ -38,8 +39,8 @@ checker.FileChecker = FileCheckerCached
 def main():
     from flake8.main import cli
 
-    cli.main()
+    return cli.main()
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
